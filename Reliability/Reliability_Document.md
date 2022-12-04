@@ -9,7 +9,10 @@ Vue Storefront Cloud is a blazing fast cloud infrastructure fitted to Vue Storef
 - Security
 
 ## Kubernetes & Google Cloud Platform
-Kubernetes - the best, Google-originated orchestration tool globally - and team it with Google Cloud Platform. It facilitates large-scale eCommerce run as fast as possible.
+Vue StoreFront uses Kubernetes - the best, Google-originated orchestration tool globally - and team it with Google Cloud Platform. It facilitates large-scale eCommerce run as fast as possible.So use of Kubernetes and Containers helps in scalability  and availability of the VueStorefront.
+
+### Kubernetes
+Containers are a good way to bundle and run your applications, these container make sure that no downtime occurs in a website.For example, if a container goes down, another container needs to start.Kubernetes provides you with a framework to run distributed systems resiliently. It takes care of scaling and failover for your application, provides deployment patterns, and more.
 
 ## Scalability 
 Cloud-native infrastructure enables to handle dynamic traffic peaks by automatically adding or removing resources.Contrary to the conventional physical servers , flexibility becomes very difficult because we have to place the resources physically at a point. But in cloud we just have to apply for more space and pay more to scale our application.
@@ -23,3 +26,19 @@ Google Cloud CDN supports modern protocols initially developed at Google, like H
 
 ## Automatic deployments
 Each deployment is managed via storefrontcloud-cli and the GitLab repository.A fully automatic deployment flow with the evidence of changes (git-log) and a simple restore process in case of any failure. This eleiminates the human errors.
+
+#### StoreFrontCloud- Command Line Access
+The Storefront Cloud CLI tool is designed to let you manage your Storefront Cloud namespaces.
+
+##### Installation
+First, install storefrontcloud-cli (requirements: node 8.x+, yarn):
+
+```bash
+git clone https://github.com/StorefrontCloud/storefrontcloud-cli.git`
+cd storefrontcloud-cli
+yarn install
+```
+
+## References
+- [Features Documentation ](https://docs.vuestorefront.io/cloud/v2/in-a-nutshell/features.html#hosting)
+- [Kubernetes Documentation ](https://kubernetes.io/docs/concepts/overview/)
