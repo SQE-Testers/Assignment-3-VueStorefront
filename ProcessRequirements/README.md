@@ -119,14 +119,15 @@ https://github.com/vuestorefront/vue-storefront/blob/main/CONTRIBUTING.md
  
 ### Following are the guidelines when reporting issues:
 - Provide a title in the format of
- Ex:[BUG] : when , [Issue] : When i try to , an appears. 
+- Ex:[BUG] : when , [Issue] : When i try to , an appears. 
 - Tag your issue with the tag triage-needed.
 -  Provide a short summary of what you are trying to do . This includes a short description of error.
 - Provide the log of the encountered error if applicable . If  mentioned, it is good.
 - Provide the exact version of the framework you are using. 
 - Be awesome and consider contributing a pull request.
 
-
+This all steps invlove in issue lifecycle management. By using all these steps issues are resolve in vue storefront.
+ 
 https://github.com/vuestorefront/vue-storefront/blob/dec7dda3bbf49c5d0fa2a3853e317ab439da7e99/CONTRIBUTING.md
  
 
@@ -149,18 +150,37 @@ https://github.com/vuestorefront/vue-storefront/releases
 In all these visions they fix bugs , fix some navigation , fix overlapping text (https://github.com/vuestorefront/vue-storefront/issues/4024) , fix error messages (https://github.com/qiqqq),
 
 
-But in the latest version they added states.json in core/i18n/resource , Added phone validation helper , Configurable enabling min & max price aggregations , Storing totals in localStorage to sync it between tabs and Support for trailing slashes in the route paths . Some issues are also resolved in latest version 1.12.3 such as Fix gallery image generation by checking if image exists , Fix getSelectedOption based on attribute_code check , add new resetUserInvalidation action to clear invalidation state before login, clear order history and refresh token after logout, Multi-tab cart-sync in multi-store environment , Incorrect load of default address in checkout and Fix Order History Pagination. Moreover , changes and improvements are made in the latest versions such as
-- Moved hard coded fields from omitSelectedVariantFields.ts to config #4679. 
-
-- Bump dependencies versions such as #4715,#4696and #4951. 
-- Using days for dates in taxCalc.ts to make it work properly in Safari #5364. 
+But in the latest version they added 
+ 
+- Added phone validation helper(Should have validation where user can enter only number with limit (max: 10-14 digit))
+ (https://github.com/vuestorefront/vue-storefront/issues/4767)
+- Configurable enabling min & max price aggregations(based on min and max price)
+- storing totals in localStorage to sync it between tabs. (To sync data across multiple tabs you will need to take advantage of the storage event. As per the docs, this event will only trigger when a window other than itself makes changes to local storage.)
+ 
+ https://medium.com/@mfreundlich1/syncing-localstorage-across-multiple-tabs-cb5d0b1feaab
+ 
+- Support for trailing slashes in the route paths.
+ 
+ (Historically, a trailing slash marked a directory and a URL without a trailing slash at the end used to mean that the URL was a file. However, trailing slashes are purely conventional, and Google does not care whether you use them, as long as you are consistent
+ 
+ https://www.safaridigital.com.au/blog/trailing-slash-seo/)
+ 
+ 
+Some issues are also resolved in latest version 1.12.3 
+such as
+- add new resetUserInvalidation action to clear invalidation state before login
+- clear order history and refresh token after logout (Guest will use access tokens issued by commercetools and, if necessary, start an anonymous session when they create a cart or add an item to it).
+ 
+- Moved hard coded fields from omitSelectedVariantFields.ts to config #4679 (Added a config and used them instead of hard coded values). 
+- Using days for dates in taxCalc.ts to make it work properly in Safari #5364 (Using dayjs for dates, so Datetime without T between date and time works in Safari).
+ 
 - Awaiting addItem action call inside mergeServerItem action. 
 - Moved Phone Num to proper branch. 
-- Development hot-reload speed webpack config - #5559 
+- Development hot-reload speed webpack config - #5559 (Should compile faster would say that average is > 2 seconds for most projects).
 
 https://github.com/vuestorefront/vue-storefront/releases
 
-Vue storefront has 50+ releases and the latest version is 1.12.3. Vue storefront
+#### Vue storefront has 50+ releases and the latest version is 1.12.3. Vue storefront
 has 274+ contributors and languages used in these releases are
 TypeScript , Vue.js , javaScript , HTML and have a DockerFile.
 How Vue Storefront versions are released
