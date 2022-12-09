@@ -127,7 +127,8 @@ https://github.com/vuestorefront/vue-storefront/blob/main/CONTRIBUTING.md
 - Be awesome and consider contributing a pull request.
 
 
-
+https://github.com/vuestorefront/vue-storefront/blob/dec7dda3bbf49c5d0fa2a3853e317ab439da7e99/CONTRIBUTING.md
+ 
 
 # Version and Release Management Control
 The latest version of vue storefront is 1.12.3.  
