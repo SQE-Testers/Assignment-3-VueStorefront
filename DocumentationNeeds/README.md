@@ -87,30 +87,50 @@ https://docs.vuestorefront.io/v2/getting-started/installation.html#step-3-config
 Prerequisites 
 https://docs.vuestorefront.io/v2/getting-started/installation.html#prerequisites
 
-Make sure you have node 14. To check whether node 14 is installed or not run the following command on command prompt.
+Make sure you have node 14. To check whether node 14 is installed or not using command line.
+run the following command on command prompt.
+#### node -v
 
 
 ## Installation steps
 
-### Step -1 
+### Step 1 
 
-To create a project run the following command on command prompt.
+To create a project run the following command using command line.
+
+#### npx @vue-storefront/cli generate store
+
 https://docs.vuestorefront.io/v2/getting-started/installation.html#step-1-generate-a-new-project
 
 
-
-
 ### Step-2 
+
 Install dependencies.
 To install this run the following command.
+
+cd (change direction) on command line to newly created directory
+
+#### cd <project_name>
+
+
+
+#### npm instal
+
 https://docs.vuestorefront.io/v2/getting-started/installation.html#step-2-install-dependencies
 
 
-### Step 3 is to configure the project . Then ### step 4 is to start a project using this command.
+### Step 3 
+
+This step is to configure the project . For this purpose go to integration page and select the integration such as magento ,shopify etc you want.
+
+
+### step 4 
+
+This step is to start a project using this command using command line.
+
+#### npm run dev
 
 https://docs.vuestorefront.io/v2/getting-started/installation.html#step-3-configure-the-project
-
-
 
 
 They also include recommended tools in the installation document which is vue.js (
@@ -118,9 +138,7 @@ https://devtools.vuejs.org/guide/installation.html )
  devtools and vetur( https://marketplace.visualstudio.com/items?itemName=octref.vetur ) for vs code.
 
 
-
-
- # Development Document
+# Development Document
 
 https://www.interactiv4.com/en/vue-storefront-and-advantages-it-brings-to-ecommerce-businesses/
 
