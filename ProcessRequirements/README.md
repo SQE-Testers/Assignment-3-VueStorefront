@@ -120,7 +120,6 @@ https://github.com/vuestorefront/vue-storefront/blob/main/CONTRIBUTING.md
 ### Following are the guidelines when reporting issues:
 - Provide a title in the format of
  Ex:[BUG] : when , [Issue] : When i try to , an appears. 
- -
 - Tag your issue with the tag triage-needed.
 -  Provide a short summary of what you are trying to do . This includes a short description of error.
 - Provide the log of the encountered error if applicable . If  mentioned, it is good.
@@ -130,7 +129,7 @@ https://github.com/vuestorefront/vue-storefront/blob/main/CONTRIBUTING.md
 
 
 
-# Version Control
+# Version and Release Management Control
 The latest version of vue storefront is 1.12.3.  
 
 Before this version they had versions
@@ -151,16 +150,15 @@ In all these visions they fix bugs , fix some navigation , fix overlapping text 
 
 But in the latest version they added states.json in core/i18n/resource , Added phone validation helper , Configurable enabling min & max price aggregations , Storing totals in localStorage to sync it between tabs and Support for trailing slashes in the route paths . Some issues are also resolved in latest version 1.12.3 such as Fix gallery image generation by checking if image exists , Fix getSelectedOption based on attribute_code check , add new resetUserInvalidation action to clear invalidation state before login, clear order history and refresh token after logout, Multi-tab cart-sync in multi-store environment , Incorrect load of default address in checkout and Fix Order History Pagination. Moreover , changes and improvements are made in the latest versions such as
 - Moved hard coded fields from omitSelectedVariantFields.ts to config #4679. 
+
 - Bump dependencies versions such as #4715,#4696and #4951. 
 - Using days for dates in taxCalc.ts to make it work properly in Safari #5364. 
 - Awaiting addItem action call inside mergeServerItem action. 
 - Moved Phone Num to proper branch. 
 - Development hot-reload speed webpack config - #5559 
+
 https://github.com/vuestorefront/vue-storefront/releases
 
-
-
-# Release Management Control
 Vue storefront has 50+ releases and the latest version is 1.12.3. Vue storefront
 has 274+ contributors and languages used in these releases are
 TypeScript , Vue.js , javaScript , HTML and have a DockerFile.
