@@ -149,6 +149,8 @@ Vue storefront have open source integration such as magento , shopify ,spree etc
 https://vuestorefront.io/open-source
 
  Vue storefront also provides pwa (progressive web app ).
+ 
+ A progressive web application(pwa), commonly known as a progressive web app, is a type of application software delivered through the web, built using common web technologies including HTML, CSS, JavaScript, and WebAssembl
 
 Vue Storefront is a Frontend as a Service that provides full, out-of-the-box coverage for eCommerce Platform of your choice
 eCommerce Platforms
